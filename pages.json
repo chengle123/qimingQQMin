@@ -2,7 +2,7 @@
 	"pages": [{
 		"path": "pages/index/index",
 		"style": {
-			"navigationBarTitleText": "起名小程序"
+			"navigationBarTitleText": "百家姓起名工具"
 		}
 	},{
 		"path": "pages/detail/detail",
@@ -12,7 +12,7 @@
 	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "起名小程序",
+		"navigationBarTitleText": "百家姓起名工具",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#ccca9b",
 		"app-plus": {
