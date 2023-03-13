@@ -17912,6 +17912,13 @@
 					list.push(this.zheMing(item, this.formData.wordLength));
 				})
 				this.listData = list;
+				if(qq.getStorageSync("qumingshenqijieguo")){
+					var jieguolist = JSON.parse(qq.getStorageSync("qumingshenqijieguo"));
+					jieguolist = [...jieguolist, ...list]
+					qq.setStorageSync("qumingshenqijieguo", JSON.stringify(jieguolist));
+				}else{
+					qq.setStorageSync("qumingshenqijieguo", JSON.stringify(list));
+				}
 			},
 			matching(text) {
 			    console.log('匹配符号',text)
